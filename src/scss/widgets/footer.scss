@@ -1,0 +1,263 @@
+.footer {
+	background-color: #0f0f0f;
+	padding: 32px 0 42px;
+
+	@media (max-width: #{$md2+px}) {
+		padding: 35px 0;
+		background-color: $bgColor;
+	}
+
+	@media (max-width: #{$md3+px}) {
+		padding: 20px 0 30px;
+	}
+
+	&__container {
+	}
+	&__body {
+	}
+}
+
+.top-footer {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 30px;
+
+	@media (max-width: #{$md1+px}) {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	@media (max-width: #{$md3+px}) {
+		flex-direction: column;
+		gap: 28px;
+		align-items: center;
+		text-align: center;
+	}
+
+	&__block {
+		&_logo {
+			color: $greyColor;
+			font-size: 12px;
+			font-weight: 300;
+
+			:last-child {
+				margin-top: 7px;
+				text-align: right;
+				padding-right: 30px;
+
+				@media (max-width: #{$md1+px}) {
+					padding-right: 0;
+					text-align: center;
+				}
+			}
+		}
+		&_nav {
+			flex: 0 1 240px;
+
+			@media (max-width: #{$md2+px}) {
+				flex: 0 0 auto;
+			}
+		}
+		&_actions {
+		}
+		&_contacts {
+		}
+		&_socials {
+		}
+	}
+	&__title {
+		color: $lightColor;
+		text-transform: uppercase;
+		font-weight: 500;
+		line-height: 1.1;
+		@media (max-width: #{$md2+px}) {
+			font-size: 20px;
+		}
+	}
+	&__nav,
+	&__buttons,
+	&__contacts {
+		margin-top: 15px;
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+		align-items: center;
+
+		@media (max-width: #{$md3+px}) {
+			grid-template-columns: 1fr;
+			gap: 15px;
+		}
+	}
+	&__item {
+	}
+	&__link {
+		color: $greyColor;
+		font-size: 14px;
+		line-height: 1.1;
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	&__buttons {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+
+		@media (max-width: #{$md3+px}) {
+			align-items: center;
+		}
+	}
+	&__button {
+		font-size: 11px;
+		width: 160px;
+		height: 35px;
+	}
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		gap: 7.5px;
+	}
+	&__contact {
+		display: inline-flex;
+		align-items: center;
+		gap: 6px;
+		color: $greyColor;
+		font-size: 14px;
+		transition: color 0.3s ease 0s;
+
+		img {
+			flex: 0 0 28px;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: $lightYellowColor;
+			}
+		}
+
+		@media (max-width: #{$md3+px}) {
+			font-size: 20px;
+		}
+	}
+	&__socials {
+		margin-top: 15px;
+		display: flex;
+		align-items: stretch;
+		gap: 10px;
+	}
+	&__social {
+		flex: 0 0 40px;
+		width: 40px;
+		height: 40px;
+		border-radius: 5px;
+		background: $darkColor;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: background-color 0.3s ease 0s;
+		fill: $yellowColor;
+
+		svg {
+			fill: inherit;
+			transition: fill 0.3s ease 0s;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: $lightColor;
+				fill: black;
+			}
+		}
+	}
+}
+
+.bottom-footer {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: 30px;
+	margin-top: -10px;
+
+	@media (max-width: #{$md1+px}) {
+		margin-top: 20px;
+		gap: 20px;
+	}
+
+	@media (max-width: #{$md3+px}) {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		margin-top: 30px;
+		gap: 20px;
+	}
+	&__main {
+	}
+	&__title {
+		color: $lightColor;
+		font-weight: 500;
+		line-height: 1.1;
+	}
+	&__documents {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+	&__document {
+		color: $greyColor;
+		font-size: 14px;
+		line-height: 1.1;
+		transition: color 0.3s ease 0s;
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: $lightYellowColor;
+			}
+		}
+	}
+	&__copyright {
+		color: $greyColor;
+		font-size: 10px;
+		line-height: 1.25;
+		text-align: center;
+
+		@media (max-width: #{$md3+px}) {
+			font-size: 16px;
+		}
+	}
+	&__links {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		gap: 7.5px;
+		text-align: right;
+
+		@media (max-width: #{$md3+px}) {
+			align-items: center;
+			text-align: center;
+		}
+	}
+	&__link {
+		color: $greyColor;
+		text-align: right;
+		font-size: 10px;
+		line-height: 1.1;
+		transition: color 0.3s ease 0s;
+		margin-left: auto;
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: $lightYellowColor;
+			}
+		}
+
+		@media (max-width: #{$md3+px}) {
+			font-size: 14px;
+		}
+	}
+}

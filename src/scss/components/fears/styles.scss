@@ -1,0 +1,228 @@
+.fears {
+	padding: 70px 0 25px;
+
+	@media (max-width: #{$md3+px}) {
+		padding: 40px 0 25px;
+	}
+	&__container-sm {
+	}
+	&__body {
+		position: relative;
+
+		&::before {
+			content: '';
+			@include bluredElement(253, 253);
+			position: absolute;
+			z-index: -1;
+			right: 100px;
+			top: 220px;
+
+			@media (max-width: #{$md3+px}) {
+				right: 0;
+				top: 150px;
+			}
+		}
+		&::after {
+			content: '';
+			@include bluredElement(253, 253);
+			position: absolute;
+			z-index: -1;
+			left: -25px;
+			top: 150px;
+
+			@media (max-width: 1600px) {
+				left: 0;
+			}
+			@media (max-width: #{$md3+px}) {
+				left: 0;
+				top: 650px;
+			}
+		}
+	}
+	&__element {
+		position: absolute;
+		z-index: -1;
+
+		@media (max-width: #{$md1+px}) {
+			display: none;
+		}
+
+		&_right {
+			top: 0;
+			right: 0;
+			transform: translate(25%, 0px);
+		}
+		&_left {
+			top: 220px;
+			left: 0;
+			transform: translate(-50%, 0px);
+		}
+	}
+	&__uptitle {
+		color: $greyColor;
+		font-family: 'Play';
+		font-size: 24px;
+		line-height: 1.1;
+		padding: 21px 34px;
+		border-radius: 12px;
+		border: 1px solid $greyColor;
+		display: inline-block;
+		background-color: $darkColor;
+		text-align: center;
+
+		@media (max-width: #{$md2+px}) {
+			position: relative;
+			left: 50%;
+			transform: translate(-50%, 0px);
+		}
+		@media (max-width: #{$md3+px}) {
+			padding: 21px 24px;
+		}
+	}
+	&__top {
+		margin-top: 7px;
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		gap: 40px 10px;
+
+		@media (max-width: #{$md2+px}) {
+			flex-direction: column;
+			align-items: center;
+			margin-top: 12px;
+		}
+		@media (max-width: #{$md3+px}) {
+			margin-top: 18px;
+			gap: 30px;
+		}
+	}
+	&__title {
+		@include sectionTitle(48, 36, 24, 700, $lightYellowColor, 1);
+
+		@media (max-width: #{$md2+px}) {
+			text-align: center;
+		}
+	}
+	&__button {
+		max-width: 327px;
+		width: 100%;
+		flex: 0 0 327px;
+		height: 68px;
+		border-radius: 23px;
+		filter: drop-shadow(0px 0px 9px rgba(254, 224, 171, 0.4));
+
+		img {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			z-index: 4;
+
+			@media (max-width: #{$md3+px}) {
+				width: 71px;
+				height: 89px;
+			}
+		}
+
+		@media (max-width: #{$md2+px}) {
+			flex: 0 0 auto;
+		}
+	}
+	&__button-inner {
+		max-width: 200px;
+		margin-right: 43px;
+	}
+	&__grid {
+		margin-top: 58px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px 30px;
+
+		@media (max-width: #{$md2+px}) {
+			margin-top: 35px;
+			gap: 20px;
+		}
+		@media (max-width: #{$md3+px}) {
+			margin-top: 45px;
+			gap: 30px;
+			grid-template-columns: 1fr;
+		}
+	}
+	&__action {
+		border-radius: 15px;
+		background: $darkColor;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		gap: 14px;
+		margin: 45px auto 0;
+		color: #fff;
+		font-family: 'Play';
+		font-size: 20px;
+		padding: 17px 24px;
+		transition: background-color 0.3s ease 0s;
+		max-width: 255px;
+		width: 100%;
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: rgba($color: #000000, $alpha: 0.2);
+			}
+		}
+
+		@media (max-width: #{$md2+px}) {
+			margin: 35px auto 0;
+		}
+	}
+	&__count {
+	}
+	&__action-icon {
+		width: 35px;
+		height: 35px;
+		flex: 0 0 35px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		background: radial-gradient(50% 50% at 50% 50%, #ffd17e 0%, #fee0ab 100%);
+		filter: drop-shadow(0px 0px 9px rgba(254, 224, 171, 0.4));
+
+		img {
+			transform: rotate(-90deg);
+			height: 15px;
+			width: auto;
+		}
+	}
+}
+
+.item-fears {
+	line-height: 1.25;
+
+	@media (max-width: #{$md3+px}) {
+		text-align: center;
+	}
+
+	&__icon {
+		width: 160px;
+		height: 160px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 15px;
+		background: $darkColor;
+		@media (max-width: #{$md3+px}) {
+			margin: 0 auto;
+		}
+	}
+	&__title {
+		margin-top: 16px;
+		color: $lightColor;
+		font-family: 'Play';
+		font-size: 20px;
+	}
+	&__text {
+		margin-top: 16px;
+		color: $greyColor;
+		font-size: 16px;
+	}
+}

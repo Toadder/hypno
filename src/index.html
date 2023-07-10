@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./html/head.html',
+{
+"title": "Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include("./html/widgets/header.html")
+
+		<!-- .main -->
+		<main class="main">
+			@@include("./html/components/intro/index.html")
+			@@include("./html/components/reviews/index.html")
+			@@include("./html/components/tariffs/index.html")
+			@@include("./html/components/about/index.html")
+			@@include("./html/components/work/index.html")
+			@@include("./html/components/diplomas/index.html")
+			@@include("./html/components/steps/index.html")
+			@@include("./html/components/programmes/index.html")
+			@@include("./html/components/fears/index.html")
+			@@include("./html/components/mission/index.html")
+			@@include("./html/components/session/index.html")
+			@@include("./html/components/development/index.html")
+			@@include("./html/components/coaching/index.html")
+			@@include("./html/components/tasks/index.html")
+			@@include("./html/components/contract/index.html")
+			@@include("./html/components/guarantees/index.html")
+			@@include("./html/components/principle/index.html")
+		</main>
+		<!-- /.main -->
+
+		@@include("./html/widgets/footer.html")
+		@@include("./html/widgets/popups.html")
+	</div>
+
+	<!-- SWIPER SLIDER -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<!-- SCRIPTS -->
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

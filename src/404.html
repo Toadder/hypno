@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./html/head.html',
+{
+"title": "Страница не найдена"
+})
+
+<body>
+	<div class="wrapper">
+		@@include("./html/widgets/header.html")
+
+		<!-- .main -->
+		<main class="main">
+			<div class="not-found">
+				<div class="not-found__container">
+					<div class="not-found__body">
+						<div class="not-found__inner">
+							<div class="not-found__top">
+								<div class="not-found__title">
+									С вашим <br> браузером <br> всё в порядке
+								</div>
+								<div class="not-found__text">просто у нас нет <br> такой страницы</div>
+							</div>
+							<div class="not-found__img">
+								<img src="img/index/section-intro/img_1.png" alt="">
+								<div class="not-found__shadow">
+									<img src="img/index/section-intro/shadow.png" alt="">
+								</div>
+							</div>
+							<div class="not-found__error">
+								<div class="not-found__404">404</div>
+								<span>ошибка</span>
+							</div>
+							<a href="/" class="not-found__button button">
+								<span class="not-found__inner-button button__inner">
+									<img src="img/icons/arrow.svg" alt="">
+									<span>На главную</span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- /.main -->
+
+		@@include("./html/widgets/footer.html")
+		@@include("./html/widgets/popups.html")
+	</div>
+
+	<!-- SWIPER SLIDER -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<!-- SCRIPTS -->
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

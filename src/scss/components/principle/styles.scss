@@ -1,0 +1,55 @@
+.principle {
+	padding: 20px 0 50px;
+	@media (max-width: #{$md3+px}) {
+		padding: 20px 0;
+	}
+	&__body {
+	}
+	&__top {
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		gap: 0;
+
+		img {
+			flex-shrink: 0;
+		}
+	}
+	&__title {
+		@include sectionTitle(36, 34, 32, 400, $darkColor, 0);
+		background-color: #ffcf77;
+		border-radius: 12px 12px 0 0;
+		padding: 17px 49px;
+		display: inline-block;
+		text-align: center;
+
+		@media (max-width: #{$md3+px}) {
+			padding: 14px 20px;
+		}
+	}
+	&__quote {
+		border-radius: 6px;
+		border: 1px solid #3e3e3e;
+		background: #101010;
+		padding: 27px 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+
+		@media (max-width: #{$md3+px}) {
+			padding: 18px;
+		}
+
+		p {
+			flex: 0 1 600px;
+			color: $greyColor;
+			font-size: 24px;
+			line-height: 1.2;
+
+			@media (max-width: #{$md3+px}) {
+				font-size: 16px;
+			}
+		}
+	}
+}

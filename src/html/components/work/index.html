@@ -1,0 +1,50 @@
+<!-- WORK -->
+<section class="work">
+	<div class="work__element work__element_left">
+		<img src="img/index/section-work/element_1.svg" alt="">
+	</div>
+	<div class="work__container">
+		<div class="work__body">
+			<div class="work__element work__element_right">
+				<img src="img/index/section-work/element_2.svg" alt="">
+			</div>
+			<div class="work__main">
+				<h2 class="work__title">
+					Как работаем
+				</h2>
+				<p class="work__text">
+					над решением проблемы?
+				</p>
+				<a href="#popup_gift" class="popup-link work__button button">
+					<span class="work__button-inner button__inner">
+						Скачать файл со страхами
+					</span>
+					<img src="img/file.png" alt="">
+				</a>
+			</div>
+			<div class="work__items">
+				@@include('./work_item.html', {
+				"title": "Выявление",
+				"icon": "img/index/section-work/icon_1.svg",
+				"subtitle": "Вы обращаетесь, ко мне с конкретным запросом on-line,",
+				"text": "рекомендую скачать файл со страхами"
+				})
+
+				@@include('./work_item.html', {
+				"title": "Обсуждение",
+				"icon": "img/index/section-work/icon_2.svg",
+				"subtitle": "Обсуждаем ваш запрос,",
+				"text": " смотрю на ситуацию со стороныи помогаю найти истинную причину вашей проблемы"
+				})
+
+				@@include('./work_item.html', {
+				"title": "Решение",
+				"icon": "img/index/section-work/icon_3.svg",
+				"subtitle": "Прорабатываем через погружение в транс,",
+				"text": "после каждого занятия даю простое задание для закрепления"
+				})
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /WORK -->

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./html/head.html',
+{
+"title": "Спасибо!"
+})
+
+<body>
+	<div class="wrapper">
+		@@include("./html/widgets/header.html")
+
+		<!-- .main -->
+		<main class="main">
+			<div class="success">
+				<div class="success__container">
+					<div class="success__body">
+						<div class="success__main main-success">
+							<div class="main-success__inner">
+								<div class="main-success__title">Поздравляю!</div>
+								<p class="main-success__text">
+									<span>Уверен, что у тебя получится</span> проработать “Денежные страхи самостоятельно”
+								</p>
+								<div class="main-success__img">
+									<img src="img/success/img_1.png" alt="">
+								</div>
+								<div class="main-success__cards">
+									<div class="main-success__card main-success__card_light">
+										<div class="main-success__icon">?</div>
+										<span>Что делать, если ты не уверен,
+											что проработал страхи?</span>
+									</div>
+									<div class="main-success__card main-success__card_dark">
+										<div class="main-success__icon">!</div>
+										<span><b>Записывайся ко мне на консультацию</b>
+											через 1 неделю после работы со страхами.</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="success__flex flex-success">
+							<div class="flex-success__main">
+								<div class="flex-success__icon">
+									<img src="img/icons/success.svg" alt="">
+								</div>
+								<p class="flex-success__title">
+									<b>Ты на верном пути</b> к своему богатству и счастью!
+								</p>
+							</div>
+							<div class="flex-success__card">
+								<ul class="flex-success__list">
+									<li class="flex-success__item">Поставь цель</li>
+									<li class="flex-success__item">Составь план</li>
+									<li class="flex-success__item">Действуй</li>
+								</ul>
+								<div class="flex-success__subtitle">Тебя обязательно ждёт успех!</div>
+							</div>
+							<a href="/" class="flex-success__button button">
+								<span class="flex-success__inner-button button__inner">
+									<img src="img/icons/arrow.svg" alt="">
+									<span>На главную</span>
+								</span>
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- /.main -->
+
+		@@include("./html/widgets/footer.html")
+		@@include("./html/widgets/popups.html")
+	</div>
+
+	<!-- SWIPER SLIDER -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<!-- SCRIPTS -->
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

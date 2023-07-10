@@ -1,0 +1,101 @@
+.contract {
+	padding: 30px 0 33px;
+
+	@media (max-width: #{$md3+px}) {
+		padding: 0 0 29px;
+	}
+	&__body {
+		position: relative;
+	}
+	&__title {
+		@include sectionTitle(48, 48, 48, 700);
+		@media (max-width: #{$md3+px}) {
+			text-align: center;
+		}
+	}
+}
+
+.card-contract {
+	margin-top: 22px;
+	border-radius: 10px;
+	background-color: $lightColor;
+	padding: 55px 43px;
+	position: relative;
+
+	@media (max-width: #{$md2+px}) {
+		padding: 40px 30px;
+	}
+
+	@media (max-width: #{$md3+px}) {
+		margin-top: 18px;
+		padding: 16px 16px 296px;
+	}
+
+	&::before {
+		content:'';
+		width: 100%;
+		left: 0;
+		bottom: -22px;
+		height: 45px;
+		background-color: $greyColor;
+		position: absolute;
+		z-index: -1;
+		border-radius: 0 0 10px 10px;
+	}
+
+	&__content {
+		line-height: 1.2;
+		max-width: 483px;
+		position: relative;
+		z-index: 2;
+
+		@media (max-width: #{$md2+px}) {
+			max-width: 430px;
+		}
+		@media (max-width: #{$md3+px}) {
+			max-width: 100%;
+		}
+	}
+	&__title {
+		color: #7a7a7a;
+		font-size: 40px;
+		font-family: 'Play';
+		font-weight: 700;
+		text-transform: uppercase;
+
+		@media (max-width: #{$md2+px}) {
+			font-size: 36px;
+		}
+	}
+	&__subtitle {
+		font-weight: 600;
+		font-size: 20px;
+		margin-top: 15px;
+		color: $darkColor;
+	}
+	&__text {
+		color: $darkColor;
+		margin-top: 25px;
+	}
+	&__img {
+		position: absolute;
+		bottom: -12px;
+		right: 85px;
+		z-index: 1;
+
+		@media (max-width: #{$md1+px}) {
+			right: 50px;
+		}
+		@media (max-width: #{$md2+px}) {
+			right: 20px;
+		}
+		@media (max-width: #{$md3+px}) {
+			right: 50%;
+			transform: translate(30%, 0px);
+
+			img {
+				max-width: 406px;
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+// SECTION TITLE
+@mixin sectionTitle(
+	$fontSize,
+	$fonSizeTable,
+	$fontSizeMobile,
+	$fontWeight: 700,
+	$color: $lightYellowColor,
+	$isUppercase: 1
+) {
+	font-size: #{$fontSize + px};
+	font-weight: $fontWeight;
+	color: $color;
+	line-height: 1.2;
+	font-family: 'Play';
+
+	@if $isUppercase == 1 {
+		text-transform: uppercase;
+	}
+
+	@media (max-width: #{$md2+px}) {
+		font-size: #{$fonSizeTable + px};
+	}
+
+	@media (max-width: #{$md3+px}) {
+		font-size: #{$fontSizeMobile + px};
+	}
+}
+
+// BLURED ELEMENT
+@mixin bluredElement($width, $height) {
+	background-color: rgba($color: $yellowColor, $alpha: .4);
+	filter: blur(112.5px);
+	border-radius: 50%;
+	width: #{$width + px};
+	height: #{$height + px};
+	display: block;
+}

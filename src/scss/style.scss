@@ -1,0 +1,116 @@
+/* ====== ШРИФТЫ ====== */
+// @import "fonts";
+/* ====== ШРИФТЫ ====== */
+
+// ====== ИКОНКИ ======
+// @import "inc/icons.scss";
+// ====== ИКОНКИ ======
+
+// ====== МИКСИНЫ ======
+@import 'inc/mixins';
+// ====== МИКСИНЫ ======
+
+// ====== ОБНУЛЕНИЕ ======
+@import 'inc/reset';
+// ====== ОБНУЛЕНИЕ ======
+
+// ====== ПЕРЕМЕННЫЕ ======
+$fontFamily: 'Montserrat';
+$fontSize: 16;
+
+$textColor: #fff;
+$bgColor: #212121;
+
+$darkColor: #2e2e2e;
+$lightColor: #f9f9f9;
+$greyColor: #b6b6b6;
+$yellowColor: #ffd17e;
+$lightYellowColor: #fee0ab;
+
+$maxWidth: 1920;
+$maxWidthContainer: 1100;
+$maxWidthContainerSm: 920;
+$paddings: 15;
+
+$md1: 1198.98;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+// ====== ПЕРЕМЕННЫЕ ======
+
+// ====== ГЛОБАЛЬНЫЕ СТИЛИ ======
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-size: #{$fontSize + px};
+	color: $textColor;
+	line-height: 1;
+	font-family: $fontFamily;
+	background-color: $bgColor;
+	overflow-x: hidden;
+
+	&.lock {
+		overflow: hidden;
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+	margin-top: 82px;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
+[class*='__container'] {
+	max-width: #{($maxWidthContainer + 2 * $paddings) + px};
+	margin: 0 auto;
+	padding: 0 #{$paddings + px};
+	width: 100%;
+}
+
+[class*='__container-sm'] {
+	max-width: #{($maxWidthContainerSm + 2 * $paddings) + px};
+	margin: 0 auto;
+	padding: 0 #{$paddings + px};
+	width: 100%;
+}
+
+input.error {
+	border: 1px solid red;
+}
+
+.radial-gradient {
+	background: radial-gradient(50% 50% at 50% 50%, #daaf61 0%, #ffcf77 100%);
+}
+
+.hover-radial-gradient {
+	background: radial-gradient(50% 50% at 50% 50%, #ffcf77 0%, #ffe8be 100%);
+}
+
+.contents__content {
+	display: none;
+
+	&.contents__content_active {
+		display: block;
+	}
+}
+// ====== ГЛОБАЛЬНЫЕ СТИЛИ ======
+
+// ====== ИМПОРТ КОМПОНЕНТОВ ======
+@import 'base.scss';
+@import 'widgets/**/*';
+@import 'components/**/*';
+// ====== ИМПОРТ КОМПОНЕНТОВ ======

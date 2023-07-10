@@ -1,0 +1,61 @@
+.guarantees {
+	padding: 33px 0 20px;
+	position: relative;
+
+	@media (max-width: #{$md3+px}) {
+		padding: 29px 0 20px;
+	}
+
+	&__body {
+	}
+	&__title {
+		@include sectionTitle(36, 34, 32, 400, $greyColor, 1);
+		@media (max-width: #{$md3+px}) {
+			text-align: center;
+		}
+	}
+	&__items {
+		margin-top: 23px;
+		@media (max-width: #{$md3+px}) {
+			margin-top: 20px;
+		}
+	}
+	&__item {
+		border-radius: 10px;
+		background: $darkColor;
+		padding: 10px 60px 10px 10px;
+		display: flex;
+		align-items: center;
+		gap: 27px;
+
+		@media (max-width: #{$md1+px}) {
+			padding: 10px;
+		}
+		@media (max-width: #{$md2+px}) {
+			gap: 20px;
+		}
+		@media (max-width: #{$md3+px}) {
+			gap: 12px;
+		}
+
+		&:not(:first-child) {
+			margin-top: 23px;
+			@media (max-width: #{$md3+px}) {
+				margin-top: 20px;
+			}
+		}
+	}
+	&__img {
+		img {
+			border-radius: 14px;
+		}
+	}
+	&__text {
+		color: $lightColor;
+		font-size: 20px;
+		line-height: 1.2;
+		@media (max-width: #{$md3+px}) {
+			font-size: 14px;
+		}
+	}
+}
