@@ -1,3 +1,34 @@
+// Device type
+const isMobile = {
+	Android: function () {
+		return navigator.userAgent.match(/Android/i);
+	},
+	BlackBerry: function () {
+		return navigator.userAgent.match(/BlackBerry/i);
+	},
+	iOS: function () {
+		return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+	},
+	Opera: function () {
+		return navigator.userAgent.match(/Opera Mini/i);
+	},
+	Windows: function () {
+		return (
+			navigator.userAgent.match(/IEMobile/i) ||
+			navigator.userAgent.match(/WPDesktop/i)
+		);
+	},
+	any: function () {
+		return (
+			isMobile.Android() ||
+			isMobile.BlackBerry() ||
+			isMobile.iOS() ||
+			isMobile.Opera() ||
+			isMobile.Windows()
+		);
+	},
+};
+
 // Media Queries
 const mobileMediaQuery = window.matchMedia('(max-width: 767.98px)');
 
@@ -367,7 +398,9 @@ const videosHandler = () => {
 			'click',
 			() => {
 				overlay.classList.add('video__overlay_clicked');
-				video.requestFullscreen();
+				if (!isMobile.any()) {
+					video.requestFullscreen();
+				}
 				video.play();
 				setTimeout(() => (video.controls = true), 350);
 			},
