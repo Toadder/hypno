@@ -739,7 +739,7 @@ input.error {
   width: 50%;
   background-color: #2e2e2e;
   left: 10.5px;
-  transition: all 0.3s ease 0s, transform 0.3s ease 0.3s, left 0.3s ease 0.3s;
+  transition: all 0.3s ease 0.3s, width 0.3s ease 0s, top 0.3s ease 0s, bottom 0.3s ease 0s, color 0.3s ease 0s;
 }
 
 .header__burger.header__burger_active .header__burger-inner::before {
@@ -4429,6 +4429,10 @@ input.error {
     flex: 0 0 auto;
   }
 
+  .tariffs {
+    overflow: hidden;
+  }
+
   .tariffs__bg_bottom img {
     height: 534px;
   }
@@ -5283,10 +5287,6 @@ input.error {
 
   .flex-success__subtitle {
     flex: 0 0 auto;
-  }
-
-  .tariffs {
-    overflow: hidden;
   }
 
   .tariffs__bg_bottom img {
