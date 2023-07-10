@@ -572,7 +572,7 @@ const fearsLoading = () => {
 
 	if (!fearsBlock || !fearsItems.length || !fearsLoad || !fearsHide) return;
 
-	if(fearsItems.length <= ITEMS_TO_LOAD) {
+	if (fearsItems.length <= ITEMS_TO_LOAD) {
 		fearsLoad.style.display = 'none';
 		return;
 	}
@@ -587,7 +587,7 @@ const fearsLoading = () => {
 		for (const item of itemsToShow) fadeIn(item, 1000);
 
 		countShownItems += itemsToShow.length;
-		if(countShownItems === fearsItems.length) {
+		if (countShownItems === fearsItems.length) {
 			fearsLoad.style.display = 'none';
 			fearsHide.style.display = 'flex';
 		}
@@ -595,14 +595,12 @@ const fearsLoading = () => {
 
 	fearsHide.addEventListener('click', () => {
 		const topOffset = header.offsetHeight,
-				elementPosition = fearsBlock.getBoundingClientRect().top,
-				offsetPosition = elementPosition - topOffset;
+			elementPosition = fearsBlock.getBoundingClientRect().top,
+			offsetPosition = elementPosition - topOffset;
 
-		const itemsToShow = fearsItems.filter(
-			(_, index) => index >= ITEMS_TO_LOAD
-		);
+		const itemsToShow = fearsItems.filter((_, index) => index >= ITEMS_TO_LOAD);
 		for (const item of itemsToShow) fadeOut(item, 1000);
-		
+
 		countShownItems = ITEMS_TO_LOAD;
 		fearsLoad.style.display = 'flex';
 		fearsHide.style.display = 'none';
@@ -614,16 +612,45 @@ const fearsLoading = () => {
 	});
 };
 
-// Initialize functions
-const init = () => {
-	useDynamicAdapt();
+// Lazy Loading
+const lazyloading = () => {
+	const lazyImages = document.querySelectorAll('[data-src]');
+
+	if (lazyImages) {
+		const imageObserver = new IntersectionObserver(
+			(entries, imgObserver) => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						const lazyImage = entry.target;
+						lazyImage.src = lazyImage.dataset.src;
+						imgObserver.unobserve(lazyImage);
+					}
+				});
+			},
+			{
+				root: null,
+				threshold: 0.1,
+			}
+		);
+
+		lazyImages.forEach(image => imageObserver.observe(image));
+	}
+};
+
+document.addEventListener('DOMContentLoaded', () => {
 	headerHandler();
-	anchorScrollInit();
-	slidersInit();
-	videosHandler();
+	lazyloading();
+	useDynamicAdapt();
 	popupHandler();
 	tabsInit();
 	fearsLoading();
+});
+
+// Initialize functions
+const init = () => {
+	anchorScrollInit();
+	slidersInit();
+	videosHandler();
 	heightBlocksHandler();
 };
 

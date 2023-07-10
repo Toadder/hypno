@@ -13,10 +13,25 @@
 		&_bottom {
 			bottom: 0px;
 			left: 0;
+
+			img {
+				height: 495px;
+
+				@media (max-width: #{$md2+px}) {
+					height: 373px;
+				}
+				@media (max-width: #{$md3+px}) {
+					height: 155px;
+				}
+			}
 		}
 		&_top {
 			top: 0;
 			right: -122px;
+			
+			img {
+				height: 396px;
+			}
 
 			@media (max-width: #{$md1+px}) {
 				display: none;
@@ -34,11 +49,23 @@
 		&_left {
 			bottom: 0;
 			left: 0;
+
+			img {
+				height: 954px;
+
+				@media (max-width: #{$md3+px}) {
+					height: 556px;
+				}
+			}
 		}
 		&_right {
 			right: 0;
 			top: 50%;
 			transform: translate(0px, -50%);
+
+			img {
+				height: 606px;
+			}
 
 			@media (max-width: #{$md3+px}) {
 				display: none;
@@ -210,7 +237,7 @@
 	}
 	&__play {
 		cursor: pointer;
-		transition: opacity .3s ease 0s;
+		transition: opacity 0.3s ease 0s;
 
 		@media (any-hover: hover) {
 			&:hover {

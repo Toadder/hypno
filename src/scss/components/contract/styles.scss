@@ -32,7 +32,7 @@
 	}
 
 	&::before {
-		content:'';
+		content: '';
 		width: 100%;
 		left: 0;
 		bottom: -22px;
@@ -95,6 +95,11 @@
 
 			img {
 				max-width: 406px;
+				height: 361px;
+
+				@media (max-width: #{$md3+px}) {
+					height: 313px;
+				}
 			}
 		}
 	}

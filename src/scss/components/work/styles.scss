@@ -19,12 +19,20 @@
 			bottom: 0;
 			z-index: -1;
 			max-width: 100%;
+
+			img {
+				height: 492px;
+			}
 		}
 
 		&_right {
 			top: 0;
 			right: 0;
 			transform: translate(25%, 0px);
+
+			img {
+				height: 426px;
+			}
 
 			@media (max-width: #{$md1+px}) {
 				transform: translate(0, 0px);
@@ -136,7 +144,7 @@
 	&:not(:last-child) {
 		&::after {
 			content: '';
-			background-image: url('..img/index/section-work/arrow.svg');
+			background-image: url('../img/index/section-work/arrow.svg');
 			background-repeat: no-repeat;
 			background-position: center center;
 			width: 63px;

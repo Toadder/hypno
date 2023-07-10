@@ -5,14 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Главная</title>
 	<!-- SWIPER SLIDER -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20230710131455" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20230711030735" />
 	<!-- STYLES -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230710131455">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230711030735">
 	<!-- FONTS -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
-		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Play:wght@400;700&display=swap&_v=20230710131455"
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Play:wght@400;700&display=swap&_v=20230711030735"
 		rel="stylesheet">
 </head>
 
@@ -66,9 +66,9 @@
 					через погружение в транс <span>для каждого</span>
 				</p>
 				<div class="intro__img">
-					<picture><source srcset="img/index/section-intro/img_1.webp" type="image/webp"><img src="img/index/section-intro/img_1.png" alt=""></picture>
+					<img  data-src="img/index/section-intro/img_1.png" alt="">
 					<div class="intro__shadow">
-						<picture><source srcset="img/index/section-intro/shadow.webp" type="image/webp"><img src="img/index/section-intro/shadow.png" alt=""></picture>
+						<img data-src="img/index/section-intro/shadow.png" alt="">
 					</div>
 				</div>
 				<div class="intro__quote">
@@ -77,14 +77,14 @@
 				<div class="intro__items">
 					<div class="intro__item item-intro">
 						<div class="item-intro__icon">
-							<img src="img/index/section-intro/icon_1.svg" alt="">
+							<img data-src="img/index/section-intro/icon_1.svg" alt="">
 						</div>
 						<p class="item-intro__text">Станешь смелым</p>
 					</div>
 
 					<div class="intro__item item-intro">
 						<div class="item-intro__icon">
-							<img src="img/index/section-intro/icon_2.svg" alt="">
+							<img data-src="img/index/section-intro/icon_2.svg" alt="">
 						</div>
 						<p class="item-intro__text">Станешь думать
 							как богатый человек</p>
@@ -92,7 +92,7 @@
 
 					<div class="intro__item item-intro">
 						<div class="item-intro__icon">
-							<img src="img/index/section-intro/icon_3.svg" alt="">
+							<img data-src="img/index/section-intro/icon_3.svg" alt="">
 						</div>
 						<p class="item-intro__text">Станешь счастливым
 							и любимым</p>
@@ -110,7 +110,7 @@
 					<span class="intro__button-inner button__inner">
 						Получить PDF файл
 					</span>
-					<picture><source srcset="img/file.webp" type="image/webp"><img src="img/file.png" alt=""></picture>
+					<img src="img/file.png" alt="">
 				</a>
 			</div>
 
@@ -121,18 +121,18 @@
 			<!-- REVIEWS -->
 <section class="reviews" id='reviews'>
 	<div class="reviews__bg reviews__bg_bottom">
-		<picture><source srcset="img/index/section-reviews/bg_bottom.webp" type="image/webp"><img src="img/index/section-reviews/bg_bottom.png" alt=""></picture>
+		<img data-src="img/index/section-reviews/bg_bottom.png" alt="">
 	</div>
 	<div class="reviews__element reviews__element_left">
-		<img src="img/index/section-reviews/element_1.svg" alt="">
+		<img data-src="img/index/section-reviews/element_1.svg" alt="">
 	</div>
 	<div class="reviews__element reviews__element_right">
-		<img src="img/index/section-reviews/element_2.svg" alt="">
+		<img data-src="img/index/section-reviews/element_2.svg" alt="">
 	</div>
 	<div class="reviews__container">
 		<div class="reviews__body">
 			<div class="reviews__bg reviews__bg_top">
-				<picture><source srcset="img/index/section-reviews/bg_top.webp" type="image/webp"><img src="img/index/section-reviews/bg_top.png" alt=""></picture>
+				<img data-src="img/index/section-reviews/bg_top.png" alt="">
 			</div>
 			<h2 class="reviews__title">
 				Отзывы
@@ -143,9 +143,9 @@
 						<div class="reviews__item item-reviews swiper-slide">
 	<div class="item-reviews__title">Есения Вальковская</div>
 	<div class="item-reviews__img">
-		<picture><source srcset="img/index/section-reviews/img_1.webp" type="image/webp"><img src="img/index/section-reviews/img_1.png" alt=""></picture>
+		<img width='174' height='174' data-src="img/index/section-reviews/img_1.png" alt="">
 		<div class="item-reviews__city">
-			<img src="img/index/section-reviews/location.svg" alt="">
+			<img width='28' height='42' data-src="img/index/section-reviews/location.svg" alt="">
 			<span>Россия <br> г. Сургут</span>
 		</div>
 	</div>
@@ -166,7 +166,7 @@
 	<div class="item-reviews__review">
 		<div class="item-reviews__label">Видео отзыв:</div>
 		<div class="item-reviews__video video">
-			<video src="img/video.mp4" preload='metadata'></video>
+			<video data-src="img/video.mp4" preload='none'></video>
 			<div class="item-reviews__overlay video__overlay">
 				<div class="item-reviews__play video__play">
 					<img src="img/icons/play.svg" alt="">
@@ -177,7 +177,7 @@
 	<a href="#popup_contact" class="popup-link item-reviews__button button">
 		<span class="item-reviews__button-inner button__inner">
 			<span>Связаться</span>
-			<img src="img/icons/email.svg" alt="">
+			<img  src="img/icons/email.svg" alt="">
 		</span>
 	</a>
 </div>
@@ -185,9 +185,9 @@
 						<div class="reviews__item item-reviews swiper-slide">
 	<div class="item-reviews__title">Татьяна Шевчук</div>
 	<div class="item-reviews__img">
-		<picture><source srcset="img/index/section-reviews/img_2.webp" type="image/webp"><img src="img/index/section-reviews/img_2.png" alt=""></picture>
+		<img width='174' height='174' data-src="img/index/section-reviews/img_2.png" alt="">
 		<div class="item-reviews__city">
-			<img src="img/index/section-reviews/location.svg" alt="">
+			<img width='28' height='42' data-src="img/index/section-reviews/location.svg" alt="">
 			<span>Россия <br> г. Волгоград</span>
 		</div>
 	</div>
@@ -208,7 +208,7 @@
 	<div class="item-reviews__review">
 		<div class="item-reviews__label">Видео отзыв:</div>
 		<div class="item-reviews__video video">
-			<video src="img/video.mp4" preload='metadata'></video>
+			<video data-src="img/video.mp4" preload='none'></video>
 			<div class="item-reviews__overlay video__overlay">
 				<div class="item-reviews__play video__play">
 					<img src="img/icons/play.svg" alt="">
@@ -219,7 +219,7 @@
 	<a href="#popup_contact" class="popup-link item-reviews__button button">
 		<span class="item-reviews__button-inner button__inner">
 			<span>Связаться</span>
-			<img src="img/icons/email.svg" alt="">
+			<img  src="img/icons/email.svg" alt="">
 		</span>
 	</a>
 </div>
@@ -227,9 +227,9 @@
 						<div class="reviews__item item-reviews swiper-slide">
 	<div class="item-reviews__title">Елена Фукс</div>
 	<div class="item-reviews__img">
-		<picture><source srcset="img/index/section-reviews/img_3.webp" type="image/webp"><img src="img/index/section-reviews/img_3.png" alt=""></picture>
+		<img width='174' height='174' data-src="img/index/section-reviews/img_3.png" alt="">
 		<div class="item-reviews__city">
-			<img src="img/index/section-reviews/location.svg" alt="">
+			<img width='28' height='42' data-src="img/index/section-reviews/location.svg" alt="">
 			<span>Канада <br> г. Ла Брокери</span>
 		</div>
 	</div>
@@ -250,7 +250,7 @@
 	<div class="item-reviews__review">
 		<div class="item-reviews__label">Видео отзыв:</div>
 		<div class="item-reviews__video video">
-			<video src="img/video.mp4" preload='metadata'></video>
+			<video data-src="img/video.mp4" preload='none'></video>
 			<div class="item-reviews__overlay video__overlay">
 				<div class="item-reviews__play video__play">
 					<img src="img/icons/play.svg" alt="">
@@ -261,7 +261,7 @@
 	<a href="#popup_contact" class="popup-link item-reviews__button button">
 		<span class="item-reviews__button-inner button__inner">
 			<span>Связаться</span>
-			<img src="img/icons/email.svg" alt="">
+			<img  src="img/icons/email.svg" alt="">
 		</span>
 	</a>
 </div>
@@ -269,9 +269,9 @@
 						<div class="reviews__item item-reviews swiper-slide">
 	<div class="item-reviews__title">Алеся Болдарева</div>
 	<div class="item-reviews__img">
-		<picture><source srcset="img/index/section-reviews/img_4.webp" type="image/webp"><img src="img/index/section-reviews/img_4.png" alt=""></picture>
+		<img width='174' height='174' data-src="img/index/section-reviews/img_4.png" alt="">
 		<div class="item-reviews__city">
-			<img src="img/index/section-reviews/location.svg" alt="">
+			<img width='28' height='42' data-src="img/index/section-reviews/location.svg" alt="">
 			<span>Россия <br> г. Краснодар</span>
 		</div>
 	</div>
@@ -292,7 +292,7 @@
 	<div class="item-reviews__review">
 		<div class="item-reviews__label">Видео отзыв:</div>
 		<div class="item-reviews__video video">
-			<video src="img/video.mp4" preload='metadata'></video>
+			<video data-src="img/video.mp4" preload='none'></video>
 			<div class="item-reviews__overlay video__overlay">
 				<div class="item-reviews__play video__play">
 					<img src="img/icons/play.svg" alt="">
@@ -303,7 +303,7 @@
 	<a href="#popup_contact" class="popup-link item-reviews__button button">
 		<span class="item-reviews__button-inner button__inner">
 			<span>Связаться</span>
-			<img src="img/icons/email.svg" alt="">
+			<img  src="img/icons/email.svg" alt="">
 		</span>
 	</a>
 </div>
@@ -311,12 +311,12 @@
 				</div>
 				<div class="reviews__prev reviews__arrow arrow button">
 					<div class="button__inner">
-						<img src="img/icons/arrow.svg" alt="">
+						<img loading='lazy' data-src="img/icons/arrow.svg" alt="">
 					</div>
 				</div>
 				<div class="reviews__next reviews__arrow arrow button">
 					<div class="button__inner">
-						<img src="img/icons/arrow.svg" alt="">
+						<img loading='lazy' data-src="img/icons/arrow.svg" alt="">
 					</div>
 				</div>
 			</div>
@@ -327,18 +327,18 @@
 			<!-- TARIFFS -->
 <section class="tariffs">
 	<div class="tariffs__bg tariffs__bg_top">
-		<picture><source srcset="img/index/section-tariffs/bg_top.webp" type="image/webp"><img src="img/index/section-tariffs/bg_top.png" alt=""></picture>
+		<img data-src="img/index/section-tariffs/bg_top.png" alt="">
 	</div>
 	<div class="tariffs__bg tariffs__bg_bottom">
-		<picture><source srcset="img/index/section-tariffs/bg_bottom.webp" type="image/webp"><img src="img/index/section-tariffs/bg_bottom.png" alt=""></picture>
+		<img  data-src="img/index/section-tariffs/bg_bottom.png" alt="">
 	</div>
 	<div class="tariffs__container">
 		<div class="tariffs__body">
 			<div class="tariffs__element tariffs__element_left">
-				<img src="img/index/section-tariffs/element_1.svg" alt="">
+				<img  data-src="img/index/section-tariffs/element_1.svg" alt="">
 			</div>
 			<div class="tariffs__element tariffs__element_right">
-				<img src="img/index/section-tariffs/element_2.svg" alt="">
+				<img  data-src="img/index/section-tariffs/element_2.svg" alt="">
 			</div>
 			<div class="tariffs__outer">
 				<div class="tariffs__slider swiper">
@@ -354,7 +354,7 @@
 	</div>
 	<div class="slide-tariffs__flex flex-slide-tariffs">
 		<div class="flex-slide-tariffs__img">
-			<picture><source srcset="img/index/section-tariffs/img_1.webp" type="image/webp"><img src="img/index/section-tariffs/img_1.jpg" alt=""></picture>
+			<img data-src="img/index/section-tariffs/img_1.jpg" alt="">
 			<div class="flex-slide-tariffs__banner flex-slide-tariffs__banner_free">
 				free
 			</div>
@@ -384,7 +384,7 @@
 	<div class="slide-tariffs__props props-slide-tariffs">
 		<div class="props-slide-tariffs__item">
 			<div class="props-slide-tariffs__icon">
-				<img src="img/index/section-tariffs/icon_clock.svg" alt="">
+				<img data-src="img/index/section-tariffs/icon_clock.svg" alt="">
 			</div>
 			<p class="props-slide-tariffs__text">
 				Время: <b>40 минут</b>
@@ -392,7 +392,7 @@
 		</div>
 		<div class="props-slide-tariffs__item">
 			<div class="props-slide-tariffs__icon">
-				<img src="img/index/section-tariffs/icon_people.svg" alt="">
+				<img data-src="img/index/section-tariffs/icon_people.svg" alt="">
 			</div>
 			<p class="props-slide-tariffs__text">
 				Индивидуально
@@ -420,7 +420,7 @@
 	</div>
 	<div class="slide-tariffs__flex flex-slide-tariffs">
 		<div class="flex-slide-tariffs__img">
-			<picture><source srcset="img/index/section-tariffs/img_2.webp" type="image/webp"><img src="img/index/section-tariffs/img_2.jpg" alt=""></picture>
+			<img data-src="img/index/section-tariffs/img_2.jpg" alt="">
 			<div class="flex-slide-tariffs__banner flex-slide-tariffs__banner_online">
 				online
 			</div>
@@ -450,7 +450,7 @@
 	<div class="slide-tariffs__props props-slide-tariffs">
 		<div class="props-slide-tariffs__item">
 			<div class="props-slide-tariffs__icon">
-				<img src="img/index/section-tariffs/icon_clock.svg" alt="">
+				<img data-src="img/index/section-tariffs/icon_clock.svg" alt="">
 			</div>
 			<p class="props-slide-tariffs__text">
 				Время: <b>60 дней</b>
@@ -458,7 +458,7 @@
 		</div>
 		<div class="props-slide-tariffs__item">
 			<div class="props-slide-tariffs__icon">
-				<img src="img/index/section-tariffs/icon_people.svg" alt="">
+				<img data-src="img/index/section-tariffs/icon_people.svg" alt="">
 			</div>
 			<p class="props-slide-tariffs__text">
 				Группы по: <b>12 человек</b>
@@ -494,12 +494,12 @@
 			<!-- ABOUT -->
 <section class="about" id='about'>
 	<div class="about__bg">
-		<picture><source srcset="img/index/section-about/bg.webp" type="image/webp"><img src="img/index/section-about/bg.png" alt=""></picture>
+		<img data-src="img/index/section-about/bg.png" alt="">
 	</div>
 	<div class="about__container">
 		<div class="about__body">
 			<div class="about__img">
-				<picture><source srcset="img/index/section-about/img_1.webp" type="image/webp"><img src="img/index/section-about/img_1.png" alt=""></picture>
+				<img data-src="img/index/section-about/img_1.png" alt="">
 			</div>
 			<div class="about__main">
 				<div class="about__uptitle">Меня зовут</div>
@@ -508,7 +508,7 @@
 				<div class="about__stats">
 					<div class="about__stat stat-about">
 	<div class="stat-about__icon">
-		<img src="img/index/section-about/icon_1.svg" alt="">
+		<img width='60' height='60'  data-src="img/index/section-about/icon_1.svg" alt="">
 	</div>
 	<p class="stat-about__text">
 		<span>Проработал страхи</span> у 18 человек
@@ -517,7 +517,7 @@
 
 					<div class="about__stat stat-about">
 	<div class="stat-about__icon">
-		<img src="img/index/section-about/icon_2.svg" alt="">
+		<img width='60' height='60'  data-src="img/index/section-about/icon_2.svg" alt="">
 	</div>
 	<p class="stat-about__text">
 		<span>Проработал ограничивающие убеждения</span> у 26 человек
@@ -526,7 +526,7 @@
 
 					<div class="about__stat stat-about">
 	<div class="stat-about__icon">
-		<img src="img/index/section-about/icon_3.svg" alt="">
+		<img width='60' height='60'  data-src="img/index/section-about/icon_3.svg" alt="">
 	</div>
 	<p class="stat-about__text">
 		5 человек после гипно коучинга <span>увеличили свой доход</span> в среднем в 1,5 раза и 2 открыли бизнес
@@ -537,7 +537,7 @@
 			<div class="about__card card-about">
 				<div class="card-about__inner">
 					<div class="card-about__element">
-						<img src="img/index/section-about/element.svg" alt="">
+						<img width='172' height='172' data-src="img/index/section-about/element.svg" alt="">
 					</div>
 					<div class="card-about__title">Как я работаю:</div>
 					<div class="card-about__subtitle">
@@ -558,12 +558,12 @@
 			<!-- WORK -->
 <section class="work">
 	<div class="work__element work__element_left">
-		<img src="img/index/section-work/element_1.svg" alt="">
+		<img data-src="img/index/section-work/element_1.svg" alt="">
 	</div>
 	<div class="work__container">
 		<div class="work__body">
 			<div class="work__element work__element_right">
-				<img src="img/index/section-work/element_2.svg" alt="">
+				<img data-src="img/index/section-work/element_2.svg" alt="">
 			</div>
 			<div class="work__main">
 				<h2 class="work__title">
@@ -576,7 +576,7 @@
 					<span class="work__button-inner button__inner">
 						Скачать файл со страхами
 					</span>
-					<picture><source srcset="img/file.webp" type="image/webp"><img src="img/file.png" alt=""></picture>
+					<img src="img/file.png" alt="">
 				</a>
 			</div>
 			<div class="work__items">
@@ -585,7 +585,7 @@
 		Выявление
 	</div>
 	<div class="item-work__icon">
-		<img src="img/index/section-work/icon_1.svg" alt="">
+		<img width='60' height='60' data-src="img/index/section-work/icon_1.svg" alt="">
 	</div>
 	<div class="item-work__subtitle">
 		Вы обращаетесь, ко мне с конкретным запросом on-line,
@@ -600,7 +600,7 @@
 		Обсуждение
 	</div>
 	<div class="item-work__icon">
-		<img src="img/index/section-work/icon_2.svg" alt="">
+		<img width='60' height='60' data-src="img/index/section-work/icon_2.svg" alt="">
 	</div>
 	<div class="item-work__subtitle">
 		Обсуждаем ваш запрос,
@@ -615,7 +615,7 @@
 		Решение
 	</div>
 	<div class="item-work__icon">
-		<img src="img/index/section-work/icon_3.svg" alt="">
+		<img width='60' height='60' data-src="img/index/section-work/icon_3.svg" alt="">
 	</div>
 	<div class="item-work__subtitle">
 		Прорабатываем через погружение в транс,
@@ -632,7 +632,7 @@
 			<!-- DIPLOMAS -->
 <section class="diplomas" id='diplomas'>
 	<div class="diplomas__element">
-		<img src="img/index/section-diplomas/element.svg" alt="">
+		<img data-src="img/index/section-diplomas/element.svg" alt="">
 	</div>
 	<div class="diplomas__container">
 		<div class="diplomas__body">
@@ -642,22 +642,25 @@
 			<div class="diplomas__outer">
 				<div class="diplomas__slider slider-diplomas swiper">
 					<div class="swiper-wrapper">
-						<div class="slider-diplomas__slide swiper-slide"><picture><source srcset="img/index/section-diplomas/img_2.webp" type="image/webp"><img src="img/index/section-diplomas/img_2.jpg" alt=""></picture>
+						<div class="slider-diplomas__slide swiper-slide"><img loading='lazy'
+								src="img/index/section-diplomas/img_2.jpg" alt="">
 						</div>
-						<div class="slider-diplomas__slide swiper-slide"><picture><source srcset="img/index/section-diplomas/img_1.webp" type="image/webp"><img src="img/index/section-diplomas/img_1.jpg" alt=""></picture>
+						<div class="slider-diplomas__slide swiper-slide"><img loading='lazy'
+								src="img/index/section-diplomas/img_1.jpg" alt="">
 						</div>
-						<div class="slider-diplomas__slide swiper-slide"><picture><source srcset="img/index/section-diplomas/img_3.webp" type="image/webp"><img src="img/index/section-diplomas/img_3.jpg" alt=""></picture>
+						<div class="slider-diplomas__slide swiper-slide"><img loading='lazy'
+								src="img/index/section-diplomas/img_3.jpg" alt="">
 						</div>
 					</div>
 				</div>
 				<div class="diplomas__arrow diplomas__prev button arrow">
 					<div class="button__inner">
-						<img src="img/icons/arrow.svg" alt="">
+						<img loading='lazy' src="img/icons/arrow.svg" alt="">
 					</div>
 				</div>
 				<div class="diplomas__arrow diplomas__next button arrow">
 					<div class="button__inner">
-						<img src="img/icons/arrow.svg" alt="">
+						<img loading='lazy' src="img/icons/arrow.svg" alt="">
 					</div>
 				</div>
 			</div>
@@ -767,7 +770,7 @@
 		“Экстра погружение”
 	</div>
 	<div class="item-programmes__icon">
-		<img src="img/index/section-programmes/icon_2.svg" alt="">
+		<img data-src="img/index/section-programmes/icon_2.svg" alt="">
 	</div>
 	<div class="item-programmes__content">
 		<div class="item-programmes__block">
@@ -785,7 +788,7 @@
 	</div>
 	<div class="item-programmes__time">
 		<div class="item-programmes__time-icon">
-			<img src="img/index/section-programmes/icon_5.svg" alt="">
+			<img data-src="img/index/section-programmes/icon_5.svg" alt="">
 		</div>
 		<div class="item-programmes__time-text">
 			Время: <b>30 минут</b>
@@ -801,7 +804,7 @@
 		“Быстрая проработка”
 	</div>
 	<div class="item-programmes__icon">
-		<img src="img/index/section-programmes/icon_3.svg" alt="">
+		<img data-src="img/index/section-programmes/icon_3.svg" alt="">
 	</div>
 	<div class="item-programmes__content">
 		<div class="item-programmes__block">
@@ -819,7 +822,7 @@
 	</div>
 	<div class="item-programmes__time">
 		<div class="item-programmes__time-icon">
-			<img src="img/index/section-programmes/icon_5.svg" alt="">
+			<img data-src="img/index/section-programmes/icon_5.svg" alt="">
 		</div>
 		<div class="item-programmes__time-text">
 			Время: <b>1 час</b>
@@ -835,7 +838,7 @@
 		“Родовые проблемы вашей личности”
 	</div>
 	<div class="item-programmes__icon">
-		<img src="img/index/section-programmes/icon_4.svg" alt="">
+		<img data-src="img/index/section-programmes/icon_4.svg" alt="">
 	</div>
 	<div class="item-programmes__content">
 		<div class="item-programmes__block">
@@ -853,7 +856,7 @@
 	</div>
 	<div class="item-programmes__time">
 		<div class="item-programmes__time-icon">
-			<img src="img/index/section-programmes/icon_5.svg" alt="">
+			<img data-src="img/index/section-programmes/icon_5.svg" alt="">
 		</div>
 		<div class="item-programmes__time-text">
 			Время: <b>2 месяца</b>
@@ -873,10 +876,10 @@
 	<div class="fears__container-sm">
 		<div class="fears__body">
 			<div class="fears__element fears__element_left">
-				<img src="img/index/section-fears/element.svg" width='428' height='428' alt="">
+				<img data-src="img/index/section-fears/element.svg" width='428' height='428' alt="">
 			</div>
 			<div class="fears__element fears__element_right">
-				<img src="img/index/section-fears/element.svg" alt="">
+				<img data-src="img/index/section-fears/element.svg" alt="" width='666' height='666'>
 			</div>
 			<div class="fears__uptitle">Часто встречающиеся</div>
 			<div class="fears__top">
@@ -887,13 +890,13 @@
 					<span class="fears__button-inner button__inner">
 						Скачать полный список PDF-файл
 					</span>
-					<picture><source srcset="img/file.webp" type="image/webp"><img src="img/file.png" alt=""></picture>
+					<img src="img/file.png" alt="">
 				</a>
 			</div>
 			<div class="fears__grid">
 				<div class="fears__item item-fears" style='display: block;'>
 	<div class="item-fears__icon">
-		<img src="img/index/section-fears/icon_1.svg" alt="">
+		<img data-src="img/index/section-fears/icon_1.svg" alt="">
 	</div>
 	<div class="item-fears__title">
 		Приступы панических атак
@@ -905,7 +908,7 @@
 
 				<div class="fears__item item-fears" style='display: block;'>
 	<div class="item-fears__icon">
-		<img src="img/index/section-fears/icon_2.svg" alt="">
+		<img data-src="img/index/section-fears/icon_2.svg" alt="">
 	</div>
 	<div class="item-fears__title">
 		Страх знакомства с людьми
@@ -917,7 +920,7 @@
 
 				<div class="fears__item item-fears" style='display: block;'>
 	<div class="item-fears__icon">
-		<img src="img/index/section-fears/icon_3.svg" alt="">
+		<img data-src="img/index/section-fears/icon_3.svg" alt="">
 	</div>
 	<div class="item-fears__title">
 		Страх больших денег
@@ -929,7 +932,7 @@
 
 				<div class="fears__item item-fears" style='display: none;'>
 	<div class="item-fears__icon">
-		<img src="img/index/section-fears/icon_4.svg" alt="">
+		<img data-src="img/index/section-fears/icon_4.svg" alt="">
 	</div>
 	<div class="item-fears__title">
 		Жалость к себе
@@ -941,7 +944,7 @@
 
 				<div class="fears__item item-fears" style='display: none;'>
 	<div class="item-fears__icon">
-		<img src="img/index/section-fears/icon_5.svg" alt="">
+		<img data-src="img/index/section-fears/icon_5.svg" alt="">
 	</div>
 	<div class="item-fears__title">
 		Финансовый потолок
@@ -953,7 +956,7 @@
 
 				<div class="fears__item item-fears" style='display: none;'>
 	<div class="item-fears__icon">
-		<img src="img/index/section-fears/icon_6.svg" alt="">
+		<img data-src="img/index/section-fears/icon_6.svg" alt="">
 	</div>
 	<div class="item-fears__title">
 		Откладывание дел на потом
@@ -965,7 +968,7 @@
 
 				<div class="fears__item item-fears" style='display: none;'>
 	<div class="item-fears__icon">
-		<img src="img/index/section-fears/icon_7.svg" alt="">
+		<img data-src="img/index/section-fears/icon_7.svg" alt="">
 	</div>
 	<div class="item-fears__title">
 		Долги и Деньги
@@ -977,7 +980,7 @@
 
 				<div class="fears__item item-fears" style='display: none;'>
 	<div class="item-fears__icon">
-		<img src="img/index/section-fears/icon_8.svg" alt="">
+		<img data-src="img/index/section-fears/icon_8.svg" alt="">
 	</div>
 	<div class="item-fears__title">
 		Чувство неполноценности
@@ -989,7 +992,7 @@
 
 				<div class="fears__item item-fears" style='display: none;'>
 	<div class="item-fears__icon">
-		<img src="img/index/section-fears/icon_9.svg" alt="">
+		<img data-src="img/index/section-fears/icon_9.svg" alt="">
 	</div>
 	<div class="item-fears__title">
 		Создание нужных Вам событий
@@ -1001,7 +1004,7 @@
 
 				<div class="fears__item item-fears" style='display: none;'>
 	<div class="item-fears__icon">
-		<img src="img/index/section-fears/icon_10.svg" alt="">
+		<img data-src="img/index/section-fears/icon_10.svg" alt="">
 	</div>
 	<div class="item-fears__title">
 		Счастливый ребёнок
@@ -1013,7 +1016,7 @@
 
 				<div class="fears__item item-fears" style='display: none;'>
 	<div class="item-fears__icon">
-		<img src="img/index/section-fears/icon_11.svg" alt="">
+		<img data-src="img/index/section-fears/icon_11.svg" alt="">
 	</div>
 	<div class="item-fears__title">
 		Я не могу распрощаться
@@ -1025,7 +1028,7 @@
 
 				<div class="fears__item item-fears" style='display: none;'>
 	<div class="item-fears__icon">
-		<img src="img/index/section-fears/icon_12.svg" alt="">
+		<img data-src="img/index/section-fears/icon_12.svg" alt="">
 	</div>
 	<div class="item-fears__title">
 		Психосоматика управляет
@@ -1037,7 +1040,7 @@
 
 				<div class="fears__item item-fears" style='display: none;'>
 	<div class="item-fears__icon">
-		<img src="img/index/section-fears/icon_13.svg" alt="">
+		<img data-src="img/index/section-fears/icon_13.svg" alt="">
 	</div>
 	<div class="item-fears__title">
 		Хочу похудеть, но...
@@ -1049,7 +1052,7 @@
 
 				<div class="fears__item item-fears" style='display: none;'>
 	<div class="item-fears__icon">
-		<img src="img/index/section-fears/icon_14.svg" alt="">
+		<img data-src="img/index/section-fears/icon_14.svg" alt="">
 	</div>
 	<div class="item-fears__title">
 		Публичные выступления и страх критики
@@ -1061,7 +1064,7 @@
 
 				<div class="fears__item item-fears" style='display: none;'>
 	<div class="item-fears__icon">
-		<img src="img/index/section-fears/icon_15.svg" alt="">
+		<img data-src="img/index/section-fears/icon_15.svg" alt="">
 	</div>
 	<div class="item-fears__title">
 		Вспыльчивость
@@ -1073,7 +1076,7 @@
 
 				<div class="fears__item item-fears" style='display: none;'>
 	<div class="item-fears__icon">
-		<img src="img/index/section-fears/icon_16.svg" alt="">
+		<img data-src="img/index/section-fears/icon_16.svg" alt="">
 	</div>
 	<div class="item-fears__title">
 		Страх, фобии и беспокойство
@@ -1085,7 +1088,7 @@
 
 				<div class="fears__item item-fears" style='display: none;'>
 	<div class="item-fears__icon">
-		<img src="img/index/section-fears/icon_17.svg" alt="">
+		<img data-src="img/index/section-fears/icon_17.svg" alt="">
 	</div>
 	<div class="item-fears__title">
 		Стрессы, выгорания и кризисы
@@ -1097,7 +1100,7 @@
 
 				<div class="fears__item item-fears" style='display: none;'>
 	<div class="item-fears__icon">
-		<img src="img/index/section-fears/icon_18.svg" alt="">
+		<img data-src="img/index/section-fears/icon_18.svg" alt="">
 	</div>
 	<div class="item-fears__title">
 		Навязчивые мысли и чувства
@@ -1109,7 +1112,7 @@
 
 				<div class="fears__item item-fears" style='display: none;'>
 	<div class="item-fears__icon">
-		<img src="img/index/section-fears/icon_19.svg" alt="">
+		<img data-src="img/index/section-fears/icon_19.svg" alt="">
 	</div>
 	<div class="item-fears__title">
 		Сексуальные проблемы
@@ -1121,7 +1124,7 @@
 
 				<div class="fears__item item-fears" style='display: none;'>
 	<div class="item-fears__icon">
-		<img src="img/index/section-fears/icon_20.svg" alt="">
+		<img data-src="img/index/section-fears/icon_20.svg" alt="">
 	</div>
 	<div class="item-fears__title">
 		Хронические депрессивные состояния
@@ -1133,7 +1136,7 @@
 
 				<div class="fears__item item-fears" style='display: none;'>
 	<div class="item-fears__icon">
-		<img src="img/index/section-fears/icon_21.svg" alt="">
+		<img data-src="img/index/section-fears/icon_21.svg" alt="">
 	</div>
 	<div class="item-fears__title">
 		Реализация и приятие себя
@@ -1145,19 +1148,19 @@
 
 				<div class="fears__item item-fears" style='display: none;'>
 	<div class="item-fears__icon">
-		<img src="img/index/section-fears/icon_22.svg" alt="">
+		<img data-src="img/index/section-fears/icon_22.svg" alt="">
 	</div>
 	<div class="item-fears__title">
 		Пагубные привычки
 	</div>
 	<p class="item-fears__text">
-		Найдёте и выработаете новые полезные для жизни привычки и навыки.  Которые заменят алкоголь, азарт и сигареты.
+		Найдёте и выработаете новые полезные для жизни привычки и навыки. Которые заменят алкоголь, азарт и сигареты.
 	</p>
 </div>
 
 				<div class="fears__item item-fears" style='display: none;'>
 	<div class="item-fears__icon">
-		<img src="img/index/section-fears/icon_23.svg" alt="">
+		<img data-src="img/index/section-fears/icon_23.svg" alt="">
 	</div>
 	<div class="item-fears__title">
 		Бизнес и карьера
@@ -1169,7 +1172,7 @@
 
 				<div class="fears__item item-fears" style='display: none;'>
 	<div class="item-fears__icon">
-		<img src="img/index/section-fears/icon_24.svg" alt="">
+		<img data-src="img/index/section-fears/icon_24.svg" alt="">
 	</div>
 	<div class="item-fears__title">
 		Травмы детства
@@ -1202,7 +1205,7 @@
 	<div class="mission__container">
 		<div class="mission__body">
 			<div class="mission__img">
-				<picture><source srcset="img/index/section-mission/img_1.webp" type="image/webp"><img src="img/index/section-mission/img_1.png" alt=""></picture>
+				<img data-src="img/index/section-mission/img_1.png" alt="">
 			</div>
 			<div class="mission__main main-mission">
 				<div class="main-mission__top">
@@ -1216,7 +1219,7 @@
 				<div class="main-mission__items">
 					<div class="main-mission__item item-main-mission">
 						<div class="item-main-mission__icon">
-							<img src="img/index/section-mission/icon_2.svg" alt="">
+							<img data-src="img/index/section-mission/icon_2.svg" alt="">
 						</div>
 						<div class="item-main-mission__content">
 							<div class="item-main-mission__title">
@@ -1230,7 +1233,7 @@
 
 					<div class="main-mission__item item-main-mission">
 						<div class="item-main-mission__icon">
-							<img src="img/index/section-mission/icon_3.svg" alt="">
+							<img data-src="img/index/section-mission/icon_3.svg" alt="">
 						</div>
 						<div class="item-main-mission__content">
 							<div class="item-main-mission__title">
@@ -1261,7 +1264,7 @@
 			<!-- SESSION -->
 <section class="session">
 	<div class="session__element">
-		<img src="img/index/section-session/element.svg" alt="">
+		<img data-src="img/index/section-session/element.svg" alt="" width='227' height='221'>
 	</div>
 	<div class="session__container-sm">
 		<div class="session__body">
@@ -1279,7 +1282,7 @@
 					</div>
 				</div>
 				<div class="session__img">
-					<img src="img/index/section-session/img_1.svg" width='200' height='286' alt="">
+					<img data-src="img/index/section-session/img_1.svg" width='200' height='286' alt="">
 				</div>
 				<div class="session__card card-session">
 					<div class="card-session__title">Все случаи частные:</div>
@@ -1324,7 +1327,7 @@
 	</div>
 	<div class="item-development__content">
 		<div class="item-development__icon">
-			<img src="img/index/section-development/icon_1.svg" alt="">
+			<img data-src="img/index/section-development/icon_1.svg" alt="">
 		</div>
 		<div class="item-development__title">
 			Создание и развитие "Академии успеха"
@@ -1343,7 +1346,7 @@
 	</div>
 	<div class="item-development__content">
 		<div class="item-development__icon">
-			<img src="img/index/section-development/icon_2.svg" alt="">
+			<img data-src="img/index/section-development/icon_2.svg" alt="">
 		</div>
 		<div class="item-development__title">
 			Запуск 3х филиалов "Академии успеха"
@@ -1362,7 +1365,7 @@
 	</div>
 	<div class="item-development__content">
 		<div class="item-development__icon">
-			<img src="img/index/section-development/icon_3.svg" alt="">
+			<img data-src="img/index/section-development/icon_3.svg" alt="">
 		</div>
 		<div class="item-development__title">
 			Российское признание гипно коучинговой программы обучения Андрея Кулагина
@@ -1381,7 +1384,7 @@
 	</div>
 	<div class="item-development__content">
 		<div class="item-development__icon">
-			<img src="img/index/section-development/icon_4.svg" alt="">
+			<img data-src="img/index/section-development/icon_4.svg" alt="">
 		</div>
 		<div class="item-development__title">
 			Международное признание "Академии успеха"
@@ -1398,7 +1401,7 @@
 			<div class='development__outer'>
 				<a href="#popup_contact" class="popup-link development__button button">
 					<span class='development__button-inner button__inner'>
-						<img src="img/icons/email.svg" alt="">
+						<img loading='lazy' src="img/icons/email.svg" alt="">
 						<span>Подать заявку
 							на обучение</span>
 					</span>
@@ -1419,16 +1422,16 @@
 
 			<div class="coaching__card card-coaching">
 				<div class="card-coaching__element card-coaching__element_right">
-					<img src="img/index/section-coaching/element_1.svg" alt="">
+					<img data-src="img/index/section-coaching/element_1.svg" alt="">
 				</div>
 				<div class="card-coaching__element card-coaching__element_left">
-					<img src="img/index/section-coaching/element_2.svg" alt="">
+					<img data-src="img/index/section-coaching/element_2.svg" alt="">
 				</div>
 				<div class="card-coaching__clock">
-					<picture><source srcset="img/index/section-coaching/img_2.webp" type="image/webp"><img src="img/index/section-coaching/img_2.png" alt=""></picture>
+					<img data-src="img/index/section-coaching/img_2.png" alt="">
 				</div>
 				<div class="card-coaching__img">
-					<picture><source srcset="img/index/section-coaching/img_1.webp" type="image/webp"><img src="img/index/section-coaching/img_1.png" alt=""></picture>
+					<img data-src="img/index/section-coaching/img_1.png" alt="">
 				</div>
 				<div class="card-coaching__content">
 					<div class="card-coaching__block">
@@ -1476,7 +1479,7 @@
 	<div class="tasks__container-sm">
 		<div class="tasks__body">
 			<div class="tasks__element">
-				<img src="img/index/section-tasks/element_1.svg" alt="">
+				<img data-src="img/index/section-tasks/element_1.svg" alt="">
 			</div>
 			<h2 class="tasks__title">
 				<span style='color: #FFD17E'>Мои</span> ключевые задачи
@@ -1485,7 +1488,7 @@
 				<!-- .item-tasks -->
 <div class="tasks__item item-tasks">
 	<div class="item-tasks__icon">
-		<img src="img/index/section-tasks/img_1.svg" alt="">
+		<img data-src="img/index/section-tasks/img_1.svg" alt="">
 	</div>
 	<p class="item-tasks__text">
 		Помочь Вам научится дисциплине в удовольствии
@@ -1493,11 +1496,10 @@
 </div>
 <!-- /.item-tasks -->
 
-
 				<!-- .item-tasks -->
 <div class="tasks__item item-tasks">
 	<div class="item-tasks__icon">
-		<img src="img/index/section-tasks/img_2.svg" alt="">
+		<img data-src="img/index/section-tasks/img_2.svg" alt="">
 	</div>
 	<p class="item-tasks__text">
 		Настроить стабильный энергообмен и ресурсное состояние у Вас
@@ -1505,11 +1507,10 @@
 </div>
 <!-- /.item-tasks -->
 
-
 				<!-- .item-tasks -->
 <div class="tasks__item item-tasks">
 	<div class="item-tasks__icon">
-		<img src="img/index/section-tasks/img_3.svg" alt="">
+		<img data-src="img/index/section-tasks/img_3.svg" alt="">
 	</div>
 	<p class="item-tasks__text">
 		Получить конкретный результат от нашей работы
@@ -1517,11 +1518,10 @@
 </div>
 <!-- /.item-tasks -->
 
-
 				<!-- .item-tasks -->
 <div class="tasks__item item-tasks">
 	<div class="item-tasks__icon">
-		<img src="img/index/section-tasks/img_4.svg" alt="">
+		<img data-src="img/index/section-tasks/img_4.svg" alt="">
 	</div>
 	<p class="item-tasks__text">
 		Спокойно реагировать на любую ситуацию
@@ -1529,11 +1529,10 @@
 </div>
 <!-- /.item-tasks -->
 
-
 				<!-- .item-tasks -->
 <div class="tasks__item item-tasks">
 	<div class="item-tasks__icon">
-		<img src="img/index/section-tasks/img_5.svg" alt="">
+		<img data-src="img/index/section-tasks/img_5.svg" alt="">
 	</div>
 	<p class="item-tasks__text">
 		Точно оценивать ситуацию
@@ -1541,11 +1540,10 @@
 </div>
 <!-- /.item-tasks -->
 
-
 				<!-- .item-tasks -->
 <div class="tasks__item item-tasks">
 	<div class="item-tasks__icon">
-		<img src="img/index/section-tasks/img_6.svg" alt="">
+		<img data-src="img/index/section-tasks/img_6.svg" alt="">
 	</div>
 	<p class="item-tasks__text">
 		Правильно действовать в зависимости от ситуации
@@ -1553,11 +1551,10 @@
 </div>
 <!-- /.item-tasks -->
 
-
 				<!-- .item-tasks -->
 <div class="tasks__item item-tasks">
 	<div class="item-tasks__icon">
-		<img src="img/index/section-tasks/img_7.svg" alt="">
+		<img data-src="img/index/section-tasks/img_7.svg" alt="">
 	</div>
 	<p class="item-tasks__text">
 		Настраиваться на результат
@@ -1565,11 +1562,10 @@
 </div>
 <!-- /.item-tasks -->
 
-
 				<!-- .item-tasks -->
 <div class="tasks__item item-tasks">
 	<div class="item-tasks__icon">
-		<img src="img/index/section-tasks/img_8.svg" alt="">
+		<img data-src="img/index/section-tasks/img_8.svg" alt="">
 	</div>
 	<p class="item-tasks__text">
 		Доводить дело до конца
@@ -1577,18 +1573,16 @@
 </div>
 <!-- /.item-tasks -->
 
-
 				<!-- .item-tasks -->
 <div class="tasks__item item-tasks">
 	<div class="item-tasks__icon">
-		<img src="img/index/section-tasks/img_9.svg" alt="">
+		<img data-src="img/index/section-tasks/img_9.svg" alt="">
 	</div>
 	<p class="item-tasks__text">
 		Уважать себя и окружающих в любой ситуации
 	</p>
 </div>
 <!-- /.item-tasks -->
-
 			</div>
 		</div>
 	</div>
@@ -1608,7 +1602,7 @@
 						их не достигаем я возвращаю 100% денежных средств.</p>
 				</div>
 				<div class="card-contract__img">
-					<picture><source srcset="img/index/section-contract/img_01.webp" type="image/webp"><img src="img/index/section-contract/img_01.png" alt=""></picture>
+					<img data-src="img/index/section-contract/img_01.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -1621,14 +1615,14 @@
 			<div class="guarantees__items">
 				<div class="guarantees__item">
 					<div class="guarantees__img">
-						<picture><source srcset="img/index/section-guarantees/img_01.webp" type="image/webp"><img src="img/index/section-guarantees/img_01.jpg" width='105' height='105' alt=""></picture>
+					<img data-src="img/index/section-guarantees/img_01.jpg" width='105' height='105' alt="">
 					</div>
 					<p class="guarantees__text">Я на сто процентов <b>уверен</b> в методиках которыми работаю.</p>
 				</div>
 
 				<div class="guarantees__item">
 					<div class="guarantees__img">
-						<picture><source srcset="img/index/section-guarantees/img_02.webp" type="image/webp"><img src="img/index/section-guarantees/img_02.jpg" width='105' height='105' alt=""></picture>
+					<img data-src="img/index/section-guarantees/img_02.jpg" width='105' height='105' alt="">
 					</div>
 					<p class="guarantees__text"><b>Работаю с тобой лично</b>, один на один и веду тебя буквально
 						за руку до результата, и не даю тебе слиться.</p>
@@ -1636,7 +1630,7 @@
 
 				<div class="guarantees__item">
 					<div class="guarantees__img">
-						<picture><source srcset="img/index/section-guarantees/img_03.webp" type="image/webp"><img src="img/index/section-guarantees/img_03.jpg" width='105' height='105' alt=""></picture>
+					<img data-src="img/index/section-guarantees/img_03.jpg" width='105' height='105' alt="">
 					</div>
 					<p class="guarantees__text">Потому, что у меня есть личные <b>жизненные принципы</b> которые позволяют мне
 						жить в кайф.</p>
@@ -1650,11 +1644,11 @@
 	<div class="principle__container-sm">
 		<div class="principle__body">
 			<div class="principle__top">
-				<img src="img/index/section-principle/icon.svg" alt="">
+				<img loading='lazy' src="img/index/section-principle/icon.svg" alt="">
 				<h2 class="principle__title">
 					Мой принцип
 				</h2>
-				<img src="img/index/section-principle/icon.svg" alt="" style='transform: scale(-1, 1);'>
+				<img loading='lazy' src="img/index/section-principle/icon.svg" alt="" style='transform: scale(-1, 1);'>
 			</div>
 			<div class="principle__quote">
 				<p>« Если человек которому ты взялся помочь
@@ -1676,7 +1670,7 @@
 				<div class="footer__top top-footer">
 					<!-- LOGO -->
 					<div class="top-footer__block top-footer__block_logo">
-						<img src="img/logo.svg" width='249' height='59' alt="">
+						<img loading='lazy' src="img/logo.svg" width='249' height='59' alt="">
 						<div>Официальная страница</div>
 					</div>
 					<!-- /LOGO -->
@@ -1719,11 +1713,11 @@
 						<div class="top-footer__title">МОИ КОНТАКТЫ</div>
 						<div class="top-footer__contacts">
 							<div><a href="tel:79531673819" class="top-footer__contact">
-									<img src="img/icons/whatsapp.svg" width='28' height='28' alt="">
+									<img loading='lazy' src="img/icons/whatsapp.svg" width='28' height='28' alt="">
 									<span>+7 953 167 3819</span>
 								</a></div>
 							<div><a href="" class="top-footer__contact">
-									<img src="img/icons/telegram.svg" width='28' height='28' alt="">
+									<img loading='lazy' src="img/icons/telegram.svg" width='28' height='28' alt="">
 									<span>@andreykulagin11</span>
 								</a></div>
 						</div>
@@ -1784,14 +1778,14 @@
 	<div class="popup__body popup-contact__body">
 		<div class="popup__content popup-contact__content">
 			<div class="popup__element popup__element_left">
-				<img src="img/popups/element_1.svg" alt="">
+				<img loading='lazy' src="img/popups/element_1.svg" alt="">
 			</div>
 			<div class="popup__element popup__element_right">
-				<img src="img/popups/element_2.svg" alt="">
+				<img loading='lazy' src="img/popups/element_2.svg" alt="">
 			</div>
 			<div class="popup__close close-popup button">
 				<span class="popup__close-inner button__inner">
-					<img src="img/icons/close.svg" alt="">
+					<img loading='lazy' src="img/icons/close.svg" alt="">
 				</span>
 			</div>
 			<div class="popup__title popup-contact__title">
@@ -1831,14 +1825,14 @@
 	<div class="popup__body popup-course__body">
 		<div class="popup__content popup-course__content">
 			<div class="popup__element popup__element_left">
-				<img src="img/popups/element_1.svg" alt="">
+				<img loading='lazy' src="img/popups/element_1.svg" alt="">
 			</div>
 			<div class="popup__element popup__element_right">
-				<img src="img/popups/element_2.svg" alt="">
+				<img loading='lazy' src="img/popups/element_2.svg" alt="">
 			</div>
 			<div class="popup__close close-popup button">
 				<span class="popup__close-inner button__inner">
-					<img src="img/icons/close.svg" alt="">
+					<img loading='lazy' src="img/icons/close.svg" alt="">
 				</span>
 			</div>
 			<div class="popup__title popup-course__title">
@@ -1909,14 +1903,14 @@
 	<div class="popup__body popup-payment__body">
 		<div class="popup__content popup-payment__content">
 			<div class="popup__element popup__element_left">
-				<img src="img/popups/element_1.svg" alt="">
+				<img loading='lazy' src="img/popups/element_1.svg" alt="">
 			</div>
 			<div class="popup__element popup__element_right">
-				<img src="img/popups/element_2.svg" alt="">
+				<img loading='lazy' src="img/popups/element_2.svg" alt="">
 			</div>
 			<div class="popup__close close-popup button">
 				<span class="popup__close-inner button__inner">
-					<img src="img/icons/close.svg" alt="">
+					<img loading='lazy' src="img/icons/close.svg" alt="">
 				</span>
 			</div>
 			<div class="popup__title popup-payment__title">
@@ -1967,14 +1961,14 @@
 	<div class="popup__body popup-gift__body">
 		<div class="popup__content popup-gift__content">
 			<div class="popup__element popup__element_left">
-				<img src="img/popups/element_1.svg" alt="">
+				<img loading='lazy' src="img/popups/element_1.svg" alt="">
 			</div>
 			<div class="popup__element popup__element_right">
-				<img src="img/popups/element_2.svg" alt="">
+				<img loading='lazy' src="img/popups/element_2.svg" alt="">
 			</div>
 			<div class="popup__close close-popup button">
 				<span class="popup__close-inner button__inner">
-					<img src="img/icons/close.svg" alt="">
+					<img loading='lazy' src="img/icons/close.svg" alt="">
 				</span>
 			</div>
 			<div class="popup__title popup-gift__title">
@@ -2080,14 +2074,14 @@
 	<div class="popup__body popup-thank__body">
 		<div class="popup__content popup-thank__content">
 			<div class="popup__element popup__element_left">
-				<img src="img/popups/element_1.svg" alt="">
+				<img loading='lazy' src="img/popups/element_1.svg" alt="">
 			</div>
 			<div class="popup__element popup__element_right">
-				<img src="img/popups/element_2.svg" alt="">
+				<img loading='lazy' src="img/popups/element_2.svg" alt="">
 			</div>
 			<div class="popup__close close-popup button">
 				<span class="popup__close-inner button__inner">
-					<img src="img/icons/close.svg" alt="">
+					<img loading='lazy' src="img/icons/close.svg" alt="">
 				</span>
 			</div>
 			<div class="popup__title popup-thank__title">
@@ -2098,7 +2092,7 @@
 					<video src="img/video.mp4" preload="metadata"></video>
 					<div class="main-popup-thank__overlay video__overlay">
 						<div class="main-popup-thank__play video__play">
-							<img src="img/icons/play.svg" alt="">
+							<img loading='lazy' src="img/icons/play.svg" alt="">
 						</div>
 					</div>
 				</div>
@@ -2124,28 +2118,28 @@
 				<div class="fears-popup-thank__grid">
 					<div class="fears-popup-thank__item">
 						<div class="fears-popup-thank__icon">
-							<img src="img/popups/fear_1.svg" alt="">
+							<img loading='lazy' src="img/popups/fear_1.svg" alt="">
 						</div>
 						<div class="fears-popup-thank__text">Страх больших денег</div>
 					</div>
 
 					<div class="fears-popup-thank__item">
 						<div class="fears-popup-thank__icon">
-							<img src="img/popups/fear_2.svg" alt="">
+							<img loading='lazy' src="img/popups/fear_2.svg" alt="">
 						</div>
 						<div class="fears-popup-thank__text">Потери денег</div>
 					</div>
 
 					<div class="fears-popup-thank__item">
 						<div class="fears-popup-thank__icon">
-							<img src="img/popups/fear_3.svg" alt="">
+							<img loading='lazy' src="img/popups/fear_3.svg" alt="">
 						</div>
 						<div class="fears-popup-thank__text">Страх бедности</div>
 					</div>
 
 					<div class="fears-popup-thank__item">
 						<div class="fears-popup-thank__icon">
-							<img src="img/popups/fear_4.svg" alt="">
+							<img loading='lazy' src="img/popups/fear_4.svg" alt="">
 						</div>
 						<div class="fears-popup-thank__text">Страх быть обманутым</div>
 					</div>
@@ -2158,9 +2152,9 @@
 	</div>
 
 	<!-- SWIPER SLIDER -->
-	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20230710131455"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20230711030735"></script>
 	<!-- SCRIPTS -->
-	<script src="js/app.min.js?_v=20230710131455"></script>
+	<script src="js/app.min.js?_v=20230711030735"></script>
 </body>
 
 </html>

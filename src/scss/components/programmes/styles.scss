@@ -2,7 +2,7 @@
 	padding: 25px 0 70px;
 	@media (max-width: #{$md3+px}) {
 		padding: 25px 0 40px;
-	}	
+	}
 	&__container {
 	}
 	&__body {
@@ -43,7 +43,7 @@
 			grid-template-columns: 1fr;
 		}
 		@media (max-width: #{$md3+px}) {
-		margin-top: 20px;	
+			margin-top: 20px;
 		}
 	}
 }
@@ -61,7 +61,7 @@
 	}
 	@media (max-width: #{$md3+px}) {
 		padding: 22px 15px 0;
-	}	
+	}
 
 	&__name {
 		color: $darkColor;
@@ -141,7 +141,7 @@
 		gap: 15px;
 
 		@media (max-width: #{$md3+px}) {
-			margin-top: 20px;	
+			margin-top: 20px;
 		}
 	}
 	&__time-icon {

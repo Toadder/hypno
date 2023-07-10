@@ -41,6 +41,10 @@
 
 		img {
 			max-width: 100%;
+			height: 654px;
+			@media (max-width: #{$md3+px}) {
+				height: 345px;
+			}
 		}
 
 		@media (max-width: #{$md1+px}) {
