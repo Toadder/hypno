@@ -111,7 +111,15 @@
 		}
 		@media (max-width: #{$md3+px}) {
 			width: 100%;
-			height: auto;
+			height: 0;
+			padding-bottom: 71%;
+			position: relative;
+
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
 		}
 	}
 }
